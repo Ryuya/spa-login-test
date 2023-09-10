@@ -1,0 +1,32 @@
+/* Header.module.css */
+.header {
+    height:60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+    z-index: 1000;
+  }
+  .navItem {
+    color: aliceblue;
+    float: left;
+    font-size: 30px;
+    margin-left: 3rem;
+  }
+
+  .button {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .headerMargin {
+    margin-top: 60px;
+  }
+  

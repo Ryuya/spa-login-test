@@ -1,0 +1,83 @@
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+  }
+  
+  .formContainer,
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .small{
+    font-size: 12px;
+}
+  
+  .formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 画面の高さいっぱいに広げます */
+  }
+  
+  .imageContainer {
+    min-height: 650px;
+    background-image: url('https://images.unsplash.com/photo-1692319772068-bcc402cf48fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3687&q=80');
+    background-size: cover;
+    background-position: center;
+  }
+  .form {
+    width: 100%;
+    max-width: 400px;
+    min-height: 650px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* これを追加 */
+    gap: 50px;
+  }
+
+  .form input[type="email"],
+.form input[type="password"] {
+  width: 76%; /* 全幅 */
+  padding: 15px; /* 内側の余白を増やす */
+  font-size: 18px; /* フォントサイズを大きく */
+  margin-bottom: 20px; /* 下の余白 */
+  border-radius: 5px; /* 角を丸く */
+}
+
+.form button {
+  padding: 15px 30px; /* 内側の余白を増やす */
+  font-size: 18px; /* フォントサイズを大きく */
+  border-radius: 5px; /* 角を丸く */
+}
+
+.submitButton {
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.submitButton:hover {
+  background-color: gray
+}
+  
+  /* レスポンシブ対応 */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
